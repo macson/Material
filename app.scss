@@ -1,0 +1,72 @@
+// Material Theming
+@use "@material/theme" with (
+  $primary: #263238,
+  $secondary: #ffb74d,
+  $background: #fafafa,
+);
+@use "material-components-web";
+
+// Define theme variables before importing any MDC Web component styles
+// $mdc-theme-primary: midnightblue;
+@use  "@material/ripple/mixins";
+@use "@material/switch/mdc-switch";
+@use "@material/switch";
+@use "@material/card/mdc-card";
+@use "@material/card";
+@use "@material/button/mdc-button";
+@use "@material/button";
+@use "@material/typography/mdc-typography";
+@use "@material/drawer/mdc-drawer";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/select/mdc-select";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/icon-button/mdc-icon-button";
+@use "@material/layout-grid/mdc-layout-grid";
+@use "@material/fab/mdc-fab";
+@use "@material/chips/mdc-chips";
+@use "@material/textfield/mdc-text-field";
+@use "@material/dialog/mdc-dialog";
+
+
+.demo-width-class {
+  max-width: 300px;
+}
+
+.demo-card-content {
+  padding: 16px;
+}
+.demo-card{
+  height: 350px;
+  max-width: 350px;
+
+}
+
+.dummy-content{
+  background-color: #fafafa;
+  min-height: 100px;
+  width: 100%;
+}
+.layout-guide{
+  border:0px solid #dd86dd;
+}
+.inner-guide{
+  border:0px solid #0464f5;
+}
+.cell-guide{
+  border:0px solid #ff1e00;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+// Import the styles for each MDC Web component
+
+
+
+// Check out the MDC Web documentation for how to use MDC Sass mixins:
+// https://github.com/material-components/material-components-web
+// .foo-button {
+//   @include mdc-button-ink-color(lightblue);
+//   @include mdc-states(lightblue);
+// }
